@@ -27,11 +27,11 @@ body {
 .my-button {
   background-color: #e85b4e !important;
   text-transform: capitalize;
-  padding: 1.5em;
+  padding: 10px;
 }
 
 .my-button div {
-  line-height: 5px;
+  line-height: 15px;
 }
 
 .product-top {
