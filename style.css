@@ -1,8 +1,9 @@
 body {
   line-height: 175%;
+  font-size: 15px;
 }
 .first-svg {
-  padding-left: 10px;
+  padding-left: 1em;
 }
 
 .nav-right input {
@@ -11,31 +12,35 @@ body {
 
 .btn:not(.button-first) {
   border-radius: 999px;
-  margin: 25px auto 75px;
+  margin: 2em auto 5em;
 }
 .button-first {
   border-radius: 999px;
-  padding: 8px !important;
+  padding: 1em !important;
 }
 .button-first div {
   line-height: 15px !important;
   font-size: 14px;
-  padding: 0px 8px !important;
+  padding: 0em 1em !important;
 }
 /* Overriding framework text-transform from uppercase to regular capitalized first only*/
 .my-button {
   background-color: #e85b4e !important;
   text-transform: capitalize;
-  padding: 25px;
+  padding: 1.5em;
 }
 
 .my-button div {
   line-height: 5px;
 }
 
-.products-top {
-  padding-left: 50px;
+.product-top {
+  padding-left: 4em !important;
 }
+header ul li a:not(.my-button) {
+  color: black !important;
+}
+
 .header-h1 {
   font-weight: 600;
 }
@@ -49,26 +54,22 @@ body {
 }
 
 .header-left-div {
-  padding-top: 25px !important;
+  padding: 2.5em 3em 6.5em !important;
   width: 100%;
-}
-.header-btn {
-  margin-bottom: 35px;
 }
 
 .responsive-img {
-  padding-top: 50px !important;
-  width: 450px;
+  padding-top: 5em !important;
 }
 .container-test {
-  padding: 100px;
+  padding: 8em 0em;
 }
 
 .m-i-a {
   font-weight: 700;
 }
 .mia-img {
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 
 .what-is-icon svg {
@@ -119,15 +120,6 @@ body {
   flex: 1;
 }
 
-@media screen and (max-width: 600px) {
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-}
-
-@media screen and (min-width: 1025px) {
-}
-
 .concepts {
   padding-bottom: 20px;
 }
@@ -157,17 +149,148 @@ h6 {
 
 .svg-float svg {
   float: left;
+  width: 35%;
 }
 
 .column-offer {
   padding: 2rem, 0rem, 0rem !important;
-  box-sizing: border-box !important;
+}
+
+h5 {
+  margin: 0px !important;
+  font-weight: 700;
 }
 
 .my-sec-resources img {
   width: 100%;
 }
+.my-sec-resources .readmore,
+.my-sec-resources .readmore:visited {
+  text-decoration-line: underline;
+  color: #e85b4e;
+}
 
 .curious-div {
   width: 100%;
+}
+
+.footer-svg {
+  padding: 1em 4em !important;
+}
+.social-media {
+  padding: 6em 1em !important;
+  display: inline-flex;
+}
+.social-media div {
+  margin: 0.25em;
+  background-color: #ffffff26;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+  min-width: 2.5em;
+  width: 2.25em;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  width: 150px;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+.flag {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin-right: 0.5rem;
+  background-image: url('https://c5.patreon.com/external/localization/country_flags.png');
+  background-position: -96px -110px;
+}
+
+.footer a,
+.footer a:visited {
+  font-size: 0.875em;
+  color: #ffffff !important;
+}
+
+@media screen and (max-width: 600px) {
+  .header-left-div {
+    min-width: 100%;
+  }
+
+  .blog-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial-change {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .mia-img {
+    margin-top: 2em !important;
+  }
+
+  .halfway {
+    padding-bottom: 2.5em;
+  }
+  .halfway svg {
+    margin: 2em 0em;
+  }
+  .my-sec-perks {
+    padding: 3em 0em;
+  }
+  .svg-float svg {
+    width: 20%;
+  }
+  .perks-p {
+    margin-bottom: 2em;
+  }
+  .my-sec-member {
+    padding: 3em 0em;
+  }
+  .my-sec-resources {
+    display: flex;
+    padding: 3em 0em;
+  }
+
+  .my-sec-resources img {
+    padding: 2em;
+  }
+
+  .my-sec-resources .link-elements {
+    padding: 0.5em 2em;
+  }
+
+  .curious-div {
+    padding: 3.5em;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .header-left-div {
+    min-width: 100%;
+  }
+  .header-img {
+    visibility: hidden;
+  }
+
+  .container-test {
+    width: 100%;
+  }
+
+  .column-offer svg {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-left-div {
+    min-width: 50%;
+    margin-bottom: 3em;
+  }
 }
