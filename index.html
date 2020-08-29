@@ -31,118 +31,122 @@
     <link rel="stylesheet" href="style.css" />
     <title>Patreon</title>
   </head>
-  <body>
-    
-    <header id="home" class="navbar-fixed">
-        
-      <!-- Dropdown Structure -->
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">Lite</a></li>
-        <li><a href="#!">Pro</a></li>
-        <li><a href="#!">Premium</a></li>
-      </ul>
-      <nav class="white">
-        <div>
-          <!--Adding svg code from Patreon-->
-          
-          <a class="brand-logo" href="#home">
-            <span>
-              <svg class="first-svg" height="22px" viewBox="0 0 569 546">
-                <title>Patreon logo</title>
-                <g>
-                  <circle
-                    fill="#F96854"
-                    cx="362.589996"
-                    cy="204.589996"
-                    data-fill="1"
-                    r="204.589996"
-                  ></circle>
-                  <rect
-                    fill="#141518"
-                    data-fill="2"
-                    height="545.799988"
-                    width="100"
-                    x="0"
-                    y="0"
-                  ></rect>
-                </g>
-              </svg>
-            </span>
-          </a>
-          <!-- Navigation list - left -->
-          <ul class="hide-on-small-only">
-            <li>
-              <a
-                class="dropdown-trigger black-text products-top"
-                href="#!"
-                data-target="dropdown1"
-                >Products<i class="material-icons right">arrow_drop_down</i></a
-              >
-            </li>
-            <li>
-              <a
-                class="dropdown-trigger black-text"
-                href="#!"
-                data-target="dropdown1"
-              >
-                For creators
-                <i class="material-icons right">arrow_drop_down</i>
+  <body id="home" class="scrollspy">
+    <header>
+      <div class="navbar-fixed">
+        <nav class="white">
+          <div>
+            <div class="nav-wrapper">
+              <a class="brand-logo" href="#home">
+                <span>
+                  <!--SVG from patreon (logo)-->
+                  <svg class="first-svg" height="22px" viewBox="0 0 569 546">
+                    <title>Patreon logo</title>
+                    <g>
+                      <circle
+                        fill="#F96854"
+                        cx="362.589996"
+                        cy="204.589996"
+                        data-fill="1"
+                        r="204.589996"
+                      ></circle>
+                      <rect
+                        fill="#141518"
+                        data-fill="2"
+                        height="545.799988"
+                        width="100"
+                        x="0"
+                        y="0"
+                      ></rect>
+                    </g>
+                  </svg>
+                </span>
               </a>
-            </li>
-            <li>
-              <a class="black-text" href="#!">Pricing</a>
-            </li>
-            <li>
               <a
-                class="dropdown-trigger black-text"
-                href="#!"
-                data-target="dropdown1"
+                href="#"
+                data-target="mobile-nav"
+                class="sidenav-trigger right"
               >
-                Resources
-                <i class="material-icons right">arrow_drop_down</i>
+                <i class="material-icons black-text">menu</i>
+                <ul class="left hide-on-med-and-down">
+                  <li class="product-top">
+                    <a href="#home">Product</a>
+                  </li>
+                  <li>
+                    <a href="#">For creators</a>
+                  </li>
+                  <li>
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#">Resources</a>
+                  </li>
+                  <li>
+                    <a href="#">Starter kits</a>
+                  </li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                  <li>
+                    <form action="/search" method="GET" role="search">
+                      <input
+                        aria-label="Search"
+                        autocomplete="off"
+                        name="q"
+                        placeholder="Find a creator"
+                        type="search"
+                      />
+                    </form>
+                  </li>
+                  <li>
+                    <a href="#">Log in</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn my-button button-first">
+                      <div>Create on Patreon</div>
+                    </a>
+                  </li>
+                </ul>
               </a>
-            </li>
-            <li>
-              <a class="black-text" href="#!">Starter kits </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Navigation list right side-->
-        <ul class="right nav-list">
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div>
+        <ul class="sidenav" id="mobile-nav">
           <li>
-            <span>
-              <form>
-                <div class="input-field  nav-right">
-                  <input class="grey lighten-3"
-                    id="search"
-                    type="search"
-                    required
-                    placeholder="Find a creator"
-                  />
-
-                  <i class="material-icons">close</i>
-                </div>
-              </form>
-            </span>
+            <a href="#home">Product</a>
           </li>
           <li>
-            <a class="black-text" href="#">Log in</a>
+            <a href="#">For creators</a>
           </li>
           <li>
-            <a href="#" class="btn my-button button-first">
-              <div>Create on Patreon</div>
-            </a>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
+          <li>
+            <a href="#">Starter kits</a>
+          </li>
+          <li>
+            <a href="#">Create on Patreon</a>
+          </li>
+          <li>
+            <a href="#">Log in</a>
+          </li>
+          <li>
+            <a href="#">Sign up</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
-
 
     <!-- Start of actual content -->
     <!-- Overriding padding top from framework to match original website-->
+
     <section class="section container-whole">
       <section class="row white-text dark-class">
-        <section class="container">
+        <section class="">
           <!-- extra padding to div on the left -->
           <div class="col s12 m6 l6 header-left-div">
             <h1 class="header-h1">The system for creative people is broken</h1>
@@ -161,38 +165,39 @@
               </a>
             </div>
           </div>
-
           <div class="col s12 m6 l6">
             <img
-              class="hide-on-med-and-down responsive-img"
+              class="hide-on-med-and-down responsive-img header-img"
               src="./photos/patreon-header.png"
               alt="B&W collage of multiple creators patreon"
-              width="550px"
             />
           </div>
         </section>
       </section>
       <section class="container-test">
         <section class="row container">
-          <section class="col s12 m4 l4 center">
-            <div class="mia-img">
-              <img
-                src="./photos/testimonial-mia.png"
-                alt="Testimonial picture of a creator from Patreon"
-              />
+          <section>
+            <div class="testimonial-change">
+              <div class="col s12 m4 l4 center">
+                <div class="mia-img">
+                  <img
+                    src="./photos/testimonial-mia.png"
+                    alt="Testimonial picture of a creator from Patreon"
+                  />
+                </div>
+                <div class="m-i-a">M.I.A</div>
+                <div class="mia-musician">Musician and artist</div>
+              </div>
+              <div class="col s12 m8 l8">
+                <h4>
+                  <strong class="mia-quote">
+                    “I like the idea of Patreon because it's really simple and
+                    it's about bringing things back to artists making art.”
+                  </strong>
+                </h4>
+              </div>
             </div>
-            <div class="m-i-a">M.I.A</div>
-            <div>Musician and artist</div>
           </section>
-
-          <div class="col s12 m8 l8">
-            <h4>
-              <strong>
-                “I like the idea of Patreon because it's really simple and it's
-                about bringing things back to artists making art.”
-              </strong>
-            </h4>
-          </div>
         </section>
       </section>
       <section class="white-text dark-class">
@@ -208,7 +213,6 @@
           </div>
           <div class="col s12 m4 l4">
             <!--Some more svg code from Patreon-->
-
             <div>
               <span class="what-is-icon">
                 <svg
@@ -244,13 +248,12 @@
             </div>
             <div class="concepts">
               <h5>Meaningful connections</h5>
-            <p>
-              Connect with your audience directly in an ad-free and troll-free
-              environment. Enjoy healthier, kinder, more meaningful
-              interactions.
-            </p>
+              <p>
+                Connect with your audience directly in an ad-free and troll-free
+                environment. Enjoy healthier, kinder, more meaningful
+                interactions.
+              </p>
             </div>
-            
           </div>
           <div class="col s12 m4 l4">
             <div>
@@ -313,13 +316,12 @@
             </div>
             <div class="concepts">
               <h5>Creative control</h5>
-            <p>
-              Create what you want and what your audience loves. You don’t have
-              to conform to popular taste or the constraints of ad-based
-              monetization models.
-            </p>
+              <p>
+                Create what you want and what your audience loves. You don’t
+                have to conform to popular taste or the constraints of ad-based
+                monetization models.
+              </p>
             </div>
-            
           </div>
           <div class="col s12 m4 l4">
             <div>
@@ -386,12 +388,11 @@
             </div>
             <div class="concepts">
               <h5>Reliable income</h5>
-            <p>
-              Generate predictable income from your work through members who pay
-              you a monthly subscription.
+              <p>
+                Generate predictable income from your work through members who
+                pay you a monthly subscription.
+              </p>
             </div>
-            
-            </p>
           </div>
         </section>
       </section>
@@ -412,7 +413,6 @@
                   <h6 class="center blog-h6">Einstürzende Neubauten</h6>
                 </div>
               </div>
-
               <div class="flexblog">
                 <div class="mia">
                   <img
@@ -423,7 +423,6 @@
                   <h6 class="center blog-h6">M.I.A</h6>
                 </div>
               </div>
-
               <div class="flexblog">
                 <div class="berlin">
                   <img
@@ -431,22 +430,18 @@
                     src="./photos/berlin-blog.png"
                     alt="Berlin's food stories' profile picture"
                   />
-
                   <h6 class="center blog-h6">Berlin Food Stories</h6>
                 </div>
               </div>
-
               <div class="flexblog">
                 <div class="loish">
                   <img
                     src="./photos/loish-blog.png"
                     alt="Loish's profile picture"
                   />
-
                   <h6 class="center blog-h6">Loish</h6>
                 </div>
               </div>
-
               <div class="flexblog">
                 <div class="lioba">
                   <img
@@ -454,11 +449,9 @@
                     src="./photos/li-blog.jpg"
                     alt="Lioba Brueckner's profile picture"
                   />
-
                   <h6 class="center blog-h6">Lioba Brueckner</h6>
                 </div>
               </div>
-
               <div class="flexblog">
                 <div class="beardy">
                   <img
@@ -466,11 +459,9 @@
                     src="./photos/beardy-blog.png"
                     alt="Beardyman's profile picture"
                   />
-
                   <h6 class="center blog-h6">Beardyman</h6>
                 </div>
               </div>
-
               <div class="flexblog">
                 <div class="redhanded">
                   <img
@@ -478,11 +469,9 @@
                     src="./photos/red-blog.png"
                     alt="RedHanded's profile picture"
                   />
-
                   <h6 class="center blog-h6">RedHanded</h6>
                 </div>
               </div>
-
               <div class="flexblog">
                 <div class="jimmy">
                   <img
@@ -490,7 +479,6 @@
                     src="./photos/jim-blog.png"
                     alt="Jim's profile picture"
                   />
-
                   <h6 class="center blog-h6">Jim'll Paint It</h6>
                 </div>
               </div>
@@ -523,7 +511,7 @@
             <h2>What can I offer my community on Patreon?</h2>
           </div>
           <div class="col s12 m12 l12 center">
-            <p>
+            <p class="perks-p">
               There are many ways to delight your fans and every creator does
               this in their own way. Choose a few of the ideas below, or invent
               your own.
@@ -532,52 +520,58 @@
           <div class="column-offer">
             <div class="col s12 m4 l4">
               <!--And more svg code from Patreon-->
-
-              <section class="svg-float left">
-                <span class="patreon-icons patreon-icon-code">
-                  <span class="patreon-icons icon-span">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="39" cy="39" r="39" data-fill="1"></circle>
-                      <path
-                        d="M23.996 40.214l.751-1.971-1.754-4.603a1.558 1.558 0 01.604-1.857l4.123-2.692 1.286-4.754a1.557 1.557 0 011.58-1.147l4.919.25 3.834-3.095c.57-.46 1.384-.46 1.954 0l3.835 3.095 4.918-.245a1.557 1.557 0 011.58 1.147l1.287 4.754 4.123 2.692c.613.4.864 1.173.604 1.857l-1.753 4.603 1.753 4.601c.26.685.009 1.458-.604 1.859l-4.123 2.684-1.293 4.755a1.555 1.555 0 01-1.58 1.15l-4.919-.246-3.834 3.088M20 51.904l2.778 4.376M35.362 32.41l10.557 16.633"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        clip-rule="evenodd"
-                        d="M45.364 48.167l-23.141 7.24-1.668-2.627 15.362-19.495 9.447 14.882v0z"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M27.223 53.841l1.47 2.258a3.423 3.423 0 004.874 1.03 3.784 3.784 0 00.985-5.1l-.274-.395"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
+              <div>
+                <div class="svg-float">
+                  <span class="patreon-icons patreon-icon-code">
+                    <span class="patreon-icons icon-span">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="39" cy="39" r="39" data-fill="1"></circle>
+                        <path
+                          d="M23.996 40.214l.751-1.971-1.754-4.603a1.558 1.558 0 01.604-1.857l4.123-2.692 1.286-4.754a1.557 1.557 0 011.58-1.147l4.919.25 3.834-3.095c.57-.46 1.384-.46 1.954 0l3.835 3.095 4.918-.245a1.557 1.557 0 011.58 1.147l1.287 4.754 4.123 2.692c.613.4.864 1.173.604 1.857l-1.753 4.603 1.753 4.601c.26.685.009 1.458-.604 1.859l-4.123 2.684-1.293 4.755a1.555 1.555 0 01-1.58 1.15l-4.919-.246-3.834 3.088M20 51.904l2.778 4.376M35.362 32.41l10.557 16.633"
+                          data-stroke="1"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          clip-rule="evenodd"
+                          d="M45.364 48.167l-23.141 7.24-1.668-2.627 15.362-19.495 9.447 14.882v0z"
+                          data-stroke="1"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M27.223 53.841l1.47 2.258a3.423 3.423 0 004.874 1.03 3.784 3.784 0 00.985-5.1l-.274-.395"
+                          data-stroke="1"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </span>
                   </span>
-                </span>
-              </section>
-              <section>
-                <h4>Recognition</h4>
-                <ul>
-                  <li><span class="grey-text">Public shoutout</span></li>
-                  <li><span class="grey-text">Name in credits</span></li>
-                  <li><span class="grey-text">Social media follow</span></li>
-                </ul>
-              </section>
-              
+                  <div class="offers">
+                    <h5>Recognition</h5>
+                    <ul>
+                      <li>
+                        <span class="grey-text">Public shoutout</span>
+                      </li>
+                      <li>
+                        <span class="grey-text">Name in credits</span>
+                      </li>
+                      <li>
+                        <span class="grey-text">Social media follow</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col s12 m4 l4">
               <div class="svg-float">
@@ -607,195 +601,214 @@
                   </svg>
                 </span>
               </div>
-              
-              <div>
-                <h4>Participation</h4>
+              <div class="offers">
+                <h5>Participation</h5>
                 <ul>
-                  <li><span class="grey-text">Polls</span></li>
-                  <li><span class="grey-text"> Collaborations</span></li>
-                  <li><span class="grey-text">Audience feedback</span></li>
+                  <li>
+                    <span class="grey-text">Polls</span>
+                  </li>
+                  <li>
+                    <span class="grey-text"> Collaborations</span>
+                  </li>
+                  <li>
+                    <span class="grey-text">Audience feedback</span>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col s12 m4 l4">
-              <div class="svg-float"> 
-                  <span class="patreon-icons icon-span">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="39" cy="39" r="39" data-fill="1"></circle>
-                      <path
-                        d="M20.629 26a.63.63 0 110 1.258.63.63 0 010-1.258M34.048 44.87V32.29M39.08 32.29v4.271c0 2.958.876 5.849 2.517 8.31a14.982 14.982 0 002.516-8.31v-4.27M23.984 32.29v10.065A2.516 2.516 0 0026.5 44.87h2.516M54.177 44.87h-2.516a2.516 2.516 0 01-2.516-2.515v-7.549a2.516 2.516 0 012.516-2.516h2.516M49.145 39.839h5.032M26.5 27.258h31.242M57.742 49.903H20"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
+              <div class="svg-float">
+                <span class="patreon-icons icon-span">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="39" cy="39" r="39" data-fill="1"></circle>
+                    <path
+                      d="M20.629 26a.63.63 0 110 1.258.63.63 0 010-1.258M34.048 44.87V32.29M39.08 32.29v4.271c0 2.958.876 5.849 2.517 8.31a14.982 14.982 0 002.516-8.31v-4.27M23.984 32.29v10.065A2.516 2.516 0 0026.5 44.87h2.516M54.177 44.87h-2.516a2.516 2.516 0 01-2.516-2.515v-7.549a2.516 2.516 0 012.516-2.516h2.516M49.145 39.839h5.032M26.5 27.258h31.242M57.742 49.903H20"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
               </div>
-              <div>
-                <h4>Creator Access</h4>
-              <ul>
-                <li><span class="grey-text">Livestreams</span></li>
-                <li><span class="grey-text">Group chats</span></li>
-                <li><span class="grey-text">member-only shows</span></li>
-              </ul>
+              <div class="offers">
+                <h5>Creator Access</h5>
+                <ul>
+                  <li><span class="grey-text">Livestreams</span></li>
+                  <li><span class="grey-text">Group chats</span></li>
+                  <li><span class="grey-text">member-only shows</span></li>
+                </ul>
               </div>
-              
             </div>
             <div class="col s12 m4 l4">
               <div class="svg-float">
-                  <span class="patreon-icons icon-span">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="39" cy="39" r="39" data-fill="1"></circle>
-                      <path
-                        d="M26.29 32.58a3.774 3.774 0 100-7.548 3.774 3.774 0 000 7.549z"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M26.29 35.097a6.29 6.29 0 00-6.29 6.29v3.774h2.516l1.258 10.065h5.032"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        clip-rule="evenodd"
-                        d="M51.452 32.58a3.774 3.774 0 100-7.548 3.774 3.774 0 000 7.549z"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M51.452 35.097a6.29 6.29 0 016.29 6.29v3.774h-2.516l-1.258 10.065h-5.033"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M38.871 30.064a5.032 5.032 0 100-10.064 5.032 5.032 0 000 10.064zM47.677 41.387a8.806 8.806 0 10-17.613 0v3.774h3.775l1.258 12.58h7.548l1.258-12.58h3.774v-3.774z"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
+                <span class="patreon-icons icon-span">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="39" cy="39" r="39" data-fill="1"></circle>
+                    <path
+                      d="M26.29 32.58a3.774 3.774 0 100-7.548 3.774 3.774 0 000 7.549z"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M26.29 35.097a6.29 6.29 0 00-6.29 6.29v3.774h2.516l1.258 10.065h5.032"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      clip-rule="evenodd"
+                      d="M51.452 32.58a3.774 3.774 0 100-7.548 3.774 3.774 0 000 7.549z"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M51.452 35.097a6.29 6.29 0 016.29 6.29v3.774h-2.516l-1.258 10.065h-5.033"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M38.871 30.064a5.032 5.032 0 100-10.064 5.032 5.032 0 000 10.064zM47.677 41.387a8.806 8.806 0 10-17.613 0v3.774h3.775l1.258 12.58h7.548l1.258-12.58h3.774v-3.774z"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
               </div>
-              <div>
-                    <h4>Community</h4>
-              <ul>
-                <li><span class="grey-text">Tribe name</span></li>
-                <li><span class="grey-text">Fan-fan connection</span></li>
-                <li><span class="grey-text">Events</span></li>
-              </ul>
+              <div class="offers">
+                <h5>Community</h5>
+                <ul>
+                  <li>
+                    <span class="grey-text">Tribe name</span>
+                  </li>
+                  <li>
+                    <span class="grey-text">Fan-fan connection</span>
+                  </li>
+                  <li>
+                    <span class="grey-text">Events</span>
+                  </li>
+                </ul>
               </div>
-          
             </div>
             <div class="col s12 m4 l4">
               <div class="svg-float">
-                  <span class="patreon-icons icon-span">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="39" cy="39" r="39" data-fill="1"></circle>
-                      <path
-                        d="M28.548 32.58v23.904c0 .695.564 1.258 1.259 1.258h17.612c.695 0 1.258-.563 1.258-1.258V32.58"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        clip-rule="evenodd"
-                        d="M48.677 40.129h6.29c.696 0 1.259-.563 1.259-1.258v-8.807C56.226 24.506 51.72 20 46.16 20h-2.516a5.032 5.032 0 01-10.064 0h-2.517C25.506 20 21 24.506 21 30.064v8.807c0 .695.563 1.258 1.258 1.258h6.29"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
+                <span class="patreon-icons icon-span">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="39" cy="39" r="39" data-fill="1"></circle>
+                    <path
+                      d="M28.548 32.58v23.904c0 .695.564 1.258 1.259 1.258h17.612c.695 0 1.258-.563 1.258-1.258V32.58"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      clip-rule="evenodd"
+                      d="M48.677 40.129h6.29c.696 0 1.259-.563 1.259-1.258v-8.807C56.226 24.506 51.72 20 46.16 20h-2.516a5.032 5.032 0 01-10.064 0h-2.517C25.506 20 21 24.506 21 30.064v8.807c0 .695.563 1.258 1.258 1.258h6.29"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
               </div>
               <div>
-                <h4>Goods</h4>
-              <ul>
-                <li><span class="grey-text">Merch</span></li>
-                <li><span class="grey-text">Discounts</span></li>
-                <li><span class="grey-text">Loyalty gifts</span></li>
-              </ul>
+                <h5>Goods</h5>
+                <ul>
+                  <li>
+                    <span class="grey-text">Merch</span>
+                  </li>
+                  <li>
+                    <span class="grey-text">Discounts</span>
+                  </li>
+                  <li>
+                    <span class="grey-text">Loyalty gifts</span>
+                  </li>
+                </ul>
               </div>
-              
             </div>
             <div class="col s12 m4 l4">
               <div class="svg-float">
-                  <span class="patreon-icons icon-span">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="39" cy="39" r="39" data-fill="1"></circle>
-                      <path
-                        d="M57.55 57.742l.168-1.882a5.032 5.032 0 00-3.92-5.368l-6.124-1.362V39.5a3.145 3.145 0 10-6.29 0v15.432l-2.478-1.858a2.572 2.572 0 00-3.6 3.6l.796 1.06"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        clip-rule="evenodd"
-                        d="M55.226 45.161V22.516A2.516 2.516 0 0052.71 20H22.516A2.516 2.516 0 0020 22.516v27.678a2.516 2.516 0 002.516 2.516h7.549M20 27.548h35.226"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        clip-rule="evenodd"
-                        d="M25.032 33.33a.75.75 0 01.75-.75h8.565a.75.75 0 01.75.75v8.565a.75.75 0 01-.75.75h-8.565a.75.75 0 01-.75-.75v-8.564z"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M25.032 47.678h10.066M40.129 32.58h10.066"
-                        data-stroke="1"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
+                <span class="patreon-icons icon-span">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="39" cy="39" r="39" data-fill="1"></circle>
+                    <path
+                      d="M57.55 57.742l.168-1.882a5.032 5.032 0 00-3.92-5.368l-6.124-1.362V39.5a3.145 3.145 0 10-6.29 0v15.432l-2.478-1.858a2.572 2.572 0 00-3.6 3.6l.796 1.06"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      clip-rule="evenodd"
+                      d="M55.226 45.161V22.516A2.516 2.516 0 0052.71 20H22.516A2.516 2.516 0 0020 22.516v27.678a2.516 2.516 0 002.516 2.516h7.549M20 27.548h35.226"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      clip-rule="evenodd"
+                      d="M25.032 33.33a.75.75 0 01.75-.75h8.565a.75.75 0 01.75.75v8.565a.75.75 0 01-.75.75h-8.565a.75.75 0 01-.75-.75v-8.564z"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M25.032 47.678h10.066M40.129 32.58h10.066"
+                      data-stroke="1"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
               </div>
               <div>
-                <h4>Content</h4>
-              <ul>
-                <li><span class="grey-text">Posts & updates</span></li>
-                <li><span class="grey-text"> Early access</span></li>
-                <li><span class="grey-text">Extra episodes</span></li>
-              </ul>
+                <h5>Content</h5>
+                <ul>
+                  <li>
+                    <span class="grey-text">Posts & updates</span>
+                  </li>
+                  <li>
+                    <span class="grey-text"> Early access</span>
+                  </li>
+                  <li>
+                    <span class="grey-text">Extra episodes</span>
+                  </li>
+                </ul>
               </div>
-              
             </div>
           </div>
         </section>
@@ -816,7 +829,9 @@
             </p>
           </div>
           <div class="col s12 m12 l12 center">
-            <a href="#" class="btn my-button"> <div>What's included</div> </a>
+            <a href="#" class="btn my-button">
+              <div>What's included</div>
+            </a>
           </div>
         </section>
       </section>
@@ -824,7 +839,6 @@
         <section class="row container">
           <div class="col s12 m12 l12 center">
             <h2>Resources to get started</h2>
-            
           </div>
           <div class="col s12 m4 l4">
             <img
@@ -832,60 +846,77 @@
               src="./photos/blog_post_1.jpg"
               alt="blog post of actress"
             />
-            <h5>Is Patreon right for you and your creative business?</h5>
-            <span>
-              Learn about how other creators have used Patreon’s membership
-              platform to transform their creative careers.
-            </span>
-            <a
-              href="https://blog.patreon.com/creator-launch-guide"
-              target="_blank"
-            >
-              Read more
-            </a>
+            <div class="link-elements">
+              <h5>Is Patreon right for you and your creative business?</h5>
+            </div>
+            <div class="link-elements">
+              <span>
+                Learn about how other creators have used Patreon’s membership
+                platform to transform their creative careers.
+              </span>
+            </div>
+            <div class="link-elements">
+              <a
+                class="readmore"
+                href="https://blog.patreon.com/creator-launch-guide"
+                target="_blank"
+                >Read more</a
+              >
+            </div>
           </div>
           <div class="col s12 m4 l4">
             <img
               src="./photos/membershipbased.jpg"
               alt="blog picture of woman with a painting"
             />
-            <h5>
-              6 Membership Based Business Models You Can Use On Patreon Today
-            </h5>
-            <span>
-              If you’ve looked at what other creators are doing on Patreon, it
-              can be daunting to see how many different ways they leverage...
-            </span>
-            <a
-              href="https://blog.patreon.com/creator-launch-guide"
-              target="_blank"
-            >
-              Read more
-            </a>
+            <div class="link-elements">
+              <h5>
+                6 Membership Based Business Models You Can Use On Patreon Today
+              </h5>
+            </div>
+            <div class="link-elements">
+              <span>
+                If you’ve looked at what other creators are doing on Patreon, it
+                can be daunting to see how many different ways they leverage...
+              </span>
+            </div>
+            <div class="link-elements">
+              <a
+                class="readmore"
+                href="https://blog.patreon.com/creator-launch-guide"
+                target="_blank"
+                >Read more</a
+              >
+            </div>
           </div>
           <div class="col s12 m4 l4">
             <img
               src="./photos/20mostuseful.jpg"
               alt="Graphics of patreon with other platforms"
             />
-            <h5>The 20 Most Useful Patreon Features & Integrations</h5>
-            <span>
-              Get an overview of our most powerful features & integrations and
-              see how you can use them to run your business.
-            </span>
-            <a
-              href="https://blog.patreon.com/creator-launch-guide"
-              target="_blank"
-            >
-              Read more
-            </a>
+            <div class="link-elements">
+              <h5>The 20 Most Useful Patreon Features & Integrations</h5>
+            </div>
+            <div class="link-elements">
+              <span>
+                Get an overview of our most powerful features & integrations and
+                see how you can use them to run your business.
+              </span>
+            </div>
+            <div class="link-elements">
+              <a
+                class="readmore"
+                href="https://blog.patreon.com/creator-launch-guide"
+                target="_blank"
+                >Read more</a
+              >
+            </div>
           </div>
-          <div class="col s12 m12 l12">
-            <a href="#" class="btn my-button center">
+          <div class="col s12 m12 l12 center">
+            <a href="#" class="btn my-button">
               <div>Create on patreon</div>
             </a>
           </div>
-
         </section>
       </section>
       <section class="my-sec-support white-text dark-class">
@@ -899,46 +930,53 @@
             </a>
           </div>
         </section>
-          <section class="white-text dark-class">
-            <div>
-              <div class="left">
-                <span>
-                  <svg
-                    height="26px"
-                    version="1.1"
-                    viewBox="0 0 569 546"
-                    width="569px"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Patreon logo</title>
-                    <g>
-                      <circle
-                        fill="white"
-                        cx="362.589996"
-                        cy="204.589996"
-                        data-fill="1"
-                        r="204.589996"
-                      ></circle>
-                      <rect
-                        fill="white"
-                        data-fill="2"
-                        height="545.799988"
-                        width="100"
-                        x="0"
-                        y="0"
-                      ></rect>
-                    </g>
-                  </svg>
-                </span>
-              </div>
-
-
-                <div >
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-instagram"></i>
+        <section class="row white-text dark-class">
+          <div class="footer-columns">
+            <div class="col s6 m4 l4 footer-svg">
+              <span>
+                <svg
+                  height="30px"
+                  version="1.1"
+                  viewBox="0 0 569 546"
+                  width="69px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Patreon logo</title>
+                  <g>
+                    <circle
+                      fill="white"
+                      cx="362.589996"
+                      cy="204.589996"
+                      data-fill="1"
+                      r="204.589996"
+                    ></circle>
+                    <rect
+                      fill="white"
+                      data-fill="2"
+                      height="545.799988"
+                      width="100"
+                      x="0"
+                      y="0"
+                    ></rect>
+                  </g>
+                </svg>
+              </span>
+              <div class="row">
+                <div class="col s6 m4 l4">
+                  <button>Language: English</button>
+                  <button>
+                    <div class="flag"></div>
+                    <span>Netherlands</span>
+                  </button>
                 </div>
-    
+              </div>
+              <div class="col s6 m4 l4 social-media">
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-facebook-f"></i></div>
+                <div><i class="fab fa-instagram"></i></div>
+              </div>
+            </div>
+            <div class="footer">
               <div class="col s6 m2 l2">
                 <ul>
                   <li>
@@ -994,21 +1032,28 @@
                 </ul>
               </div>
             </div>
-            <div class="col s6 m2 l2">
-              <div>
-                <span class="white-text">© Patreon</span>
-              </div>
-              <div>
-                <span class="white-text">Sitemap</span>
-              </div>
-            </div>
-          </section>
+          </div>
         </section>
-
-
-
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <div class="row">
+          <div class="col s6 m4 l4">
+            <div>
+              <span class="white-text">© Patreon</span>
+              <span class="white-text">Sitemap</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
+    <!-- Compiled and minified JavaScript -->
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      //sidenav menu
+      const sideNav = document.querySelector('.sidenav');
+      M.Sidenav.init(sideNav, {});
+      //Scrollspy
+      const scroll = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scroll, {});
+    </script>
   </body>
 </html>
