@@ -1,0 +1,173 @@
+body {
+  line-height: 175%;
+}
+.first-svg {
+  padding-left: 10px;
+}
+
+.nav-right input {
+  border-radius: 999px !important;
+}
+
+.btn:not(.button-first) {
+  border-radius: 999px;
+  margin: 25px auto 75px;
+}
+.button-first {
+  border-radius: 999px;
+  padding: 8px !important;
+}
+.button-first div {
+  line-height: 15px !important;
+  font-size: 14px;
+  padding: 0px 8px !important;
+}
+/* Overriding framework text-transform from uppercase to regular capitalized first only*/
+.my-button {
+  background-color: #e85b4e !important;
+  text-transform: capitalize;
+  padding: 25px;
+}
+
+.my-button div {
+  line-height: 5px;
+}
+
+.products-top {
+  padding-left: 50px;
+}
+.header-h1 {
+  font-weight: 600;
+}
+
+.container-whole {
+  padding-top: 0px !important;
+}
+
+.dark-class {
+  background-color: #141518;
+}
+
+.header-left-div {
+  padding-top: 25px !important;
+  width: 100%;
+}
+.header-btn {
+  margin-bottom: 35px;
+}
+
+.responsive-img {
+  padding-top: 50px !important;
+  width: 450px;
+}
+.container-test {
+  padding: 100px;
+}
+
+.m-i-a {
+  font-weight: 700;
+}
+.mia-img {
+  margin-bottom: 20px;
+}
+
+.what-is-icon svg {
+  align-self: center;
+  fill: transparent;
+  stroke-width: 3px;
+  height: 5rem;
+  width: 5rem;
+}
+.what-is-icon svg [data-stroke='1'],
+.what-is-icon svg [data-stroke] {
+  stroke: #83e264;
+}
+
+.what-is-icon svg [data-stroke='2'] {
+  stroke: #eeebe5;
+}
+.what-is-icon svg [data-color='1'],
+.what-is-icon svg [data-fill='1'] {
+  fill: #83e264;
+}
+.what-is-icon svg [data-color='2'],
+.what-is-icon svg [data-fill='2'] {
+  fill: #eeebe5;
+}
+
+.halfway {
+  text-align: center;
+}
+.my-sec-profiles {
+  padding: 90px;
+}
+.blog-pic-container {
+  padding: 15px;
+  margin: 5px;
+}
+
+.blog-container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flexblog {
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) {
+}
+
+.concepts {
+  padding-bottom: 20px;
+}
+
+.what-is-concept {
+  padding-bottom: 50px !important;
+}
+
+.blog-h6 {
+  font-weight: 800;
+}
+h6 {
+  padding: 10px;
+}
+
+.talk-to-us {
+  padding: 30px;
+}
+
+.icon-span svg [data-color],
+.icon-span svg [data-fill] {
+  fill: rgb(20, 21, 24);
+}
+.icon-span svg [data-stroke] {
+  stroke: rgb(131, 226, 100);
+}
+
+.svg-float svg {
+  float: left;
+}
+
+.column-offer {
+  padding: 2rem, 0rem, 0rem !important;
+  box-sizing: border-box !important;
+}
+
+.my-sec-resources img {
+  width: 100%;
+}
+
+.curious-div {
+  width: 100%;
+}
