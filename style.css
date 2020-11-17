@@ -16,16 +16,19 @@ body {
 }
 .button-first {
   border-radius: 999px;
-  padding: 1em !important;
+  padding: 1em;
 }
 .button-first div {
-  line-height: 15px !important;
+  line-height: 15px;
   font-size: 14px;
-  padding: 0em 1em !important;
+  padding: 0em 1em;
 }
 /* Overriding framework text-transform from uppercase to regular capitalized first only*/
+.my-button,
+.my-button:active,
+.my-button:hover,
 .my-button {
-  background-color: #e85b4e !important;
+  background-color: #ff424d;
   text-transform: capitalize;
   padding: 10px;
 }
@@ -35,10 +38,10 @@ body {
 }
 
 .product-top {
-  padding-left: 4em !important;
+  padding-left: 4em;
 }
 header ul li a:not(.my-button) {
-  color: black !important;
+  color: black;
 }
 
 .header-h1 {
@@ -46,7 +49,7 @@ header ul li a:not(.my-button) {
 }
 
 .container-whole {
-  padding-top: 0px !important;
+  padding: 0px;
 }
 
 .dark-class {
@@ -54,12 +57,12 @@ header ul li a:not(.my-button) {
 }
 
 .header-left-div {
-  padding: 2.5em 3em 6.5em !important;
+  padding: 3em 2em 0em 6em !important;
   width: 100%;
 }
 
 .responsive-img {
-  padding-top: 5em !important;
+  padding: 2em 5em 2em 0em;
 }
 .container-test {
   padding: 8em 0em;
@@ -94,6 +97,9 @@ header ul li a:not(.my-button) {
 .what-is-icon svg [data-color='2'],
 .what-is-icon svg [data-fill='2'] {
   fill: #eeebe5;
+}
+.patreon-concept {
+  padding: 5em;
 }
 
 .halfway {
@@ -167,7 +173,7 @@ h5 {
 .my-sec-resources .readmore,
 .my-sec-resources .readmore:visited {
   text-decoration-line: underline;
-  color: #e85b4e;
+  color: #ff424d;
 }
 
 .curious-div {
@@ -212,7 +218,10 @@ button {
 .footer a,
 .footer a:visited {
   font-size: 0.875em;
-  color: #ffffff !important;
+  color: #ffffff;
+}
+.last-row {
+  margin-bottom: 0em;
 }
 
 @media screen and (max-width: 600px) {
